@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background: #008466 0% 0% no-repeat padding-box; 
+  height: 230px;
+}
+
+body{
+  background-color:#F8F8F8 ;
+  font-family: Roboto, sans-serif;
+}
+.header-inner{ max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;}
+
+  .header-top{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+  }
+
+  .icons{
+      display: flex;
+      flex-direction: row;
+  }
+
+  .icons img{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+  .profile , .profile h5, .profile a{
+    color:#fff;
+    text-decoration: none;
+    font-family: Roboto;
+  }
+
+.header-top h1{
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+header h2{
+  margin-top: 80px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 800;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN*/
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+}
+
+section.left{ max-width: 770px;}
+section.right{ 
+margin-left: 30px;}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+h3{
+  font-size:24px;
+  color:#3D3D3D;
+  font-weight: 700;
+}
+h4{
+  font-size:16px;
+  color:#000000DE;
+}
+
+h5{
+  font-size:12px;
+  color:#3D3D3D;
+  font-weight: 700;
+}
+
+p{
+  font-size: 14px;
+  font-weight: 400;
+  color:#000000DE;
+
+}
+.credsim-inner{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.valor{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+[type="submit"]{
+  background-color: #995DFF;
+  color:#fff;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 8px 16px;
+  box-shadow: 0px 1px 3px #00000033;
+  border-radius: 4px;
+  border:none;
+  width: 90px;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+}
+[type="submit"]:hover{background-color: #7E39FB;
+  transition: background-color .2s ease-in-out;}
+
+.credsim{
+  min-height: 250px;
+  
+}
+
+
+/*CONFIGURAÇÃO CHECKBOX*/
+
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked){
+	position: absolute;
+	left: -9999px;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+.checkbox-parcelas:checked + label,
+.checkbox-parcelas:not(:checked) + label{
+	position: relative;
+	display: inline-block;
+	padding: 5px;
+  width: 50px;
+  font-size: 20px;
+  font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	border-radius: 4px;
+	overflow: hidden;
+	cursor: pointer;
+	color: #fff;
+	-webkit-transition:  300ms linear;
+	transition: background-color 300ms linear; 
+}
+.checkbox-parcelas:not(:checked) + label{
+  background-color: #fff;
+  border:1px solid #707070 ;
+  color:#707070;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.checkbox-parcelas:checked + label{
+	background-color: #DAB2FF;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.checkbox-parcelas:not(:checked) + label:hover{
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+label{
+  user-select:none;
+}
+
+/*EMPRESTIMO*/
+
+.emprestimo{
+  margin-top: 20px;
+  min-height: 400px;
+}
+.emprestimo .input{
+  margin-top: 30px;
+}
+.emprestimo form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.emprestimo p{
+  font-size: 10px;
+}
+
+.container-input + .container-input{
+  margin-left: 30px;
+}
+[type="text"], select{
+  font-size: 16px;
+  font-weight: 700;
+  color:#000000DE;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+.emprestimo [type="submit"]{
+ 
+  width: 120px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.checkboxes{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+.emprestimo label{
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+/*INFO*/
+
+.info span{
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000DE;
+}
+
+.info-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.info-row .dados + .dados{
+  margin-left: 30px;
+}
+
+.info .dados{
+  margin-top: 15px;
+}
+
+.info a{
+  color: #995DFF;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+  transition: all .4s ease-in-out;
+}
+
+.info a:hover{
+  color: #7E39FB;
+  text-decoration: underline;
+  transition: all .4s ease-in-out;
+}
+/* Situacao*/
+.situacao-title{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.situa-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-sm {
+  background-color: #fff;
+  border-radius: 8px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 15px;
+  margin-top: 10px;
+}
+
+.situacao p{
+  margin-left: 10px;
+}
+
+
+
+@media (max-width: 1000px) {
+
+
+  main{
+    max-width: 600px;
+    flex-direction:column;
+    padding: 20px;
+  }
+
+  section.right{
+    margin-top: 30px;
+  margin-left: 0;}
+
+    .header-inner{ max-width: 600px;
+       padding: 20px;}
+
+}
+
+
+
+@media (max-width: 600px) {
+
+
+  main{
+    max-width: 400px;
+    flex-direction:column;
+    padding: 20px;
+  }
+
+  section.right{
+    margin-top: 30px;
+  margin-left: 0;}
+
+  .parcelas{
+    margin-top: 20px;
+  }
+
+    .header-inner{ max-width: 400px;
+       padding: 20px;}
+
+    .valor {
+      text-align:center;
+      flex-direction: column;
+    }
+    .emprestimo form {
+      flex-direction: column;}
+
+      .container-input + .container-input {
+        margin-left: 0px;
+    }
+    .info-row {
+      flex-direction: column;
+  }
+
+    .info-row .dados + .dados {
+      margin-left: 0px;
+  }
+  .parc{
+    text-align: center;
+  }
+}
